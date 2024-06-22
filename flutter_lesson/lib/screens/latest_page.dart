@@ -83,7 +83,7 @@ class _LatestPageState extends State<LatestPage> {
 
     final response = await http.get(Uri.parse(sampleUrl));
 
-    print(response.body);
+    print(response.body); // print data
 
     final Map<String, dynamic> body = jsonDecode(response.body);
     final Article article = Article.fromJson(body);
